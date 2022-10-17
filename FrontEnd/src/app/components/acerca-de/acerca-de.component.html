@@ -1,6 +1,12 @@
+<div>
+<button type="button" class="btn btn-success" routerLink="/editacercade/1" *ngIf="isLogged">
+    Edit profile
+</button>
+</div>
 <div class="row">
+        
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-<img src="../../../assets/perfil.jpeg" class="img-fluid" id="fotoDePerfil">
+<img src={{persona.img}} class="img-fluid" id="fotoDePerfil">
 </div>
 <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
     <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
@@ -9,9 +15,7 @@
 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
     <span>
         <h1>Acerca de mí</h1>
-        <p>Me llamo Agustín y tengo 26 años, me apasiona la tecnología, el cine y los videojuegos desde pequeño.<br>
-        Busco mejorar cada día y evolucionar mis conocimientos <b>IT</b> constantemente.<br>
-    Si tuviera que definirme con 3 palabras serían <b>humildad perseverancia</b> y <b>dedicación.</b></p>
+        <p>{{persona.descripcion}}</p>
     </span>
 </div>
 </div>
