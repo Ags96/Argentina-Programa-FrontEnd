@@ -12,7 +12,8 @@ export const environment = {
     authDomain: 'frontend-portafolio-c5ad9.firebaseapp.com',
     messagingSenderId: '76616112192',
   },
-  production: false
+  production: false,
+  URL: 'https://backndargprog.herokuapp.com/'
 };
 
 /*
